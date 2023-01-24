@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My first webpage</title>
+<<<<<<< HEAD
 </head>
 <body>
     <h1>Welcome to My First Webpage</h1>
@@ -12,3 +13,84 @@
     <p>Some good <a href="https://www.youtube.com/watch?v=662JyNLVpxE">music.</a></p>
 </body>
 </html>
+=======
+    <style type="text/css">
+        header{
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 20px;
+        }
+        p{
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 20px;
+        }
+        img {
+        display: block;
+        margin: 0 auto;
+        border: 5px solid black;
+        }
+        form{
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 20px;
+        }
+        body{
+            background-color: white;
+        }
+        .caption {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+        padding: 5px;
+        }
+        .caption:hover:after {
+        content: "deez nuts";
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        visibility: visible;
+        }
+
+    
+        </style>
+</head>
+<body>
+    <header><h1>Welcome to My First Webpage</h1></header>
+    
+    <img src="paint-naama.jpg" alt="An image" width="300">
+    
+    <p>Some good <a href="https://www.youtube.com/watch?v=662JyNLVpxE">music.</a></p>
+    
+    <form>
+        <label for="colorPicker">Select a background color:</label>
+        <input type="color" id="colorPicker" onchange="changeColor()">
+        <button type="button" onclick="changeColor()">Change Color</button>
+    </form>
+    
+    <script>
+        function changeColor() {
+    var colorPicker = document.getElementById("colorPicker");
+    var selectedColor = colorPicker.value;
+    document.body.style.backgroundColor = selectedColor;
+    }
+    </script>
+
+    <div class="caption">Hover your mouse over here</div>
+
+</body>
+</html>
+>>>>>>> 7371812 (added and removed content and functionalities)
