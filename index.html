@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>My first webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
     <style type="text/css">
         header{
         background-color: cadetblue;
@@ -72,7 +75,10 @@
     <header><h1>Welcome to My First Webpage</h1></header>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="paint-naama.jpg" alt="An image" width="300">
+            <figure class="figure m-2">
+                <img src="paint-naama.jpg" class="figure-img img-fluid rounded" alt="An image" width="300">
+                <figcaption class="figure-caption text-end" style="font-size: small;">Joonas Korpinen. "KING". Paint, 27.1.2023</figcaption>
+            </figure>
         </div>
         <div class="grid-item">
             <p>Some good <a href="https://www.youtube.com/watch?v=662JyNLVpxE">music.</a></p>
